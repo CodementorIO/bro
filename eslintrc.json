@@ -16,6 +16,7 @@
     "prettier/prettier": [
       "error", {
         "semi": false,
+        "arrowParens": "always",
         "jsxBracketSameLine": true,
         "singleQuote": true,
         "parser": "flow"
