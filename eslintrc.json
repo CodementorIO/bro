@@ -1,3 +1,4 @@
 {
-  "plugins": ["standard", "standard-react"]
+  "extends": ["standard", "standard-jsx"],
+  "plugins": ["standard", "react"]
 }

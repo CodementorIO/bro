@@ -4,7 +4,7 @@ var pkg = require('./package.json')
 
 module.exports = {
   version: pkg.version,
-	cmd: 'lint',
+	cmd: 'bro',
 	eslint: eslint,
 	eslintConfig: {
 		configFile: path.join(__dirname, 'eslintrc.json')
