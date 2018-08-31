@@ -1,10 +1,8 @@
-import standard from '../'
-
 export default class Hello {
   world () {
-    const foo = () => {
+    const foo = (e) => {
       console.log('YOYO', typeof standard);
     }
-    foo()
+    foo('qwdqwdqwd')
   }
 }

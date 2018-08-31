@@ -1,5 +1,25 @@
 {
   "parser": "babel-eslint",
-  "extends": ["standard", "standard-jsx"],
-  "plugins": ["standard", "react"]
+  "extends": [
+    "standard",
+    "standard-jsx",
+    "prettier",
+    "prettier/react",
+    "prettier/standard"
+  ],
+  "plugins": [
+    "standard",
+    "react",
+    "prettier"
+  ],
+  "rules": {
+    "prettier/prettier": [
+      "error", {
+        "semi": false,
+        "jsxBracketSameLine": true,
+        "singleQuote": true,
+        "parser": "flow"
+      }
+    ]
+  }
 }
