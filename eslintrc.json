@@ -1,0 +1,3 @@
+{
+  "plugins": ["standard", "standard-react"]
+}

@@ -1,0 +1,28 @@
+{
+  "name": "bro",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "bro": "cli.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/CodementorIO/bro.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/CodementorIO/bro/issues"
+  },
+  "homepage": "https://github.com/CodementorIO/bro#readme",
+  "dependencies": {
+    "eslint": "^5.4.0",
+    "eslint-plugin-react": "^7.11.1",
+    "eslint-plugin-standard": "^4.0.0",
+    "standard-engine": "^10.0.0"
+  }
+}
