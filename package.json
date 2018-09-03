@@ -4,7 +4,7 @@
   "description": "A bro will lint and prettify your code",
   "main": "index.js",
   "bin": {
-    "bro": "cli.js"
+    "bro": "./bin/cli.js"
   },
   "scripts": {
     "test": "tape test/*.test.js"
