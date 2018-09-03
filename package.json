@@ -1,19 +1,25 @@
 {
-  "name": "bro",
+  "name": "@codementor/bro",
   "version": "1.0.0",
-  "description": "",
+  "description": "A bro will lint and prettify your code",
   "main": "index.js",
   "bin": {
     "bro": "cli.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "tape test/*.test.js"
   },
+  "keywords": [
+    "JavaScript Standard Style",
+    "eslint",
+    "standard",
+    "prettier"
+  ],
   "repository": {
     "type": "git",
     "url": "git+https://github.com/CodementorIO/bro.git"
   },
-  "author": "",
+  "author": "Ian Wang <gogoenwon@gmail.com> (https://github.com/IanWang)",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/CodementorIO/bro/issues"

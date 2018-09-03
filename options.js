@@ -9,5 +9,5 @@ module.exports = {
 	eslintConfig: {
 		configFile: path.join(__dirname, 'eslintrc.json')
 	},
-	tagline: 'Use Codementor lint Style'
+	tagline: 'A bro will lint and prettify your code'
 }
