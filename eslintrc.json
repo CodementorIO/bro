@@ -7,5 +7,9 @@
   "plugins": [
     "standard",
     "react"
-  ]
+  ],
+  "rules": {
+    "prefer-const": "error",
+    "eol-last": "off"
+  }
 }
