@@ -22,10 +22,11 @@
     "prettier/prettier": [
       "error", {
         "semi": false,
+        "printWidth": 80,
         "arrowParens": "always",
         "jsxBracketSameLine": true,
-        "singleQuote": true,
-        "parser": "flow"
+        "jsxSingleQuote": true,
+        "singleQuote": true
       }
     ]
   }
