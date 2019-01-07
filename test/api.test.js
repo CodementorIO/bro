@@ -23,6 +23,6 @@ test('custom rules', (t) => {
   t.plan(2)
   standard.lintText('let a = 1', (err, result) => {
     t.equal(typeof result, 'object', 'result is an object')
-    t.equal(result.errorCount, 2, 'no unused & prefer const')
+    t.equal(result.errorCount, 3, 'no unused & prefer const')
   })
 })
