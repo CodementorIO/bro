@@ -2,6 +2,7 @@
   "parser": "babel-eslint",
   "extends": [
     "standard",
+    "standard-react",
     "standard-jsx",
     "prettier",
     "prettier/react",
