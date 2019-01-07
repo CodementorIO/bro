@@ -12,6 +12,11 @@ A bro will lint and prettify your code
 $ yarn install @codementor/bro --dev
 ```
 
+To let your editor lint plugin works, you'll need to copy the `.eslintrc` from this package to your project root.
+```
+$ cp node_modules/@codementor/bro/eslintrc.json ./.eslintrc
+```
+
 ## Config
 
 In your `package.json`
@@ -20,11 +25,10 @@ In your `package.json`
 "scripts": {
   "lint": "bro \"src/**/*.js\" --fix"
 },
-"bro": { // below are all optional
+"bro": { // all optional
   "ignore": [],
-  "plugins": [], // additional eslint plugin
+  "plugins": [],
   "envs": [],
-  "globals": [],
-  "parser": ""
+  "globals": []
 }
 ```
