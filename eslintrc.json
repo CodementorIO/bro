@@ -2,14 +2,25 @@
   "parser": "babel-eslint",
   "extends": [
     "standard",
-    "standard-jsx"
+    "standard-jsx",
+    "prettier",
+    "prettier/react",
+    "prettier/standard"
   ],
   "plugins": [
     "standard",
-    "react"
+    "react",
+    "prettier"
   ],
   "rules": {
-    "prefer-const": "error",
-    "eol-last": "off"
+    "prettier/prettier": [
+      "error", {
+        "semi": false,
+        "arrowParens": "always",
+        "jsxBracketSameLine": true,
+        "singleQuote": true,
+        "parser": "flow"
+      }
+    ]
   }
 }
