@@ -13,6 +13,12 @@
     "prettier"
   ],
   "rules": {
+    "prefer-const": ["error", {
+      "destructuring": "all"
+    }],
+    "quote-props": ["error", "as-needed"],
+    "eol-last": "off",
+    "comma-dangle": "off",
     "prettier/prettier": [
       "error", {
         "semi": false,
