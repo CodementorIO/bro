@@ -13,6 +13,7 @@
     "react",
     "prettier"
   ],
+  "env": ["jest"],
   "rules": {
     "prefer-const": ["error", {
       "destructuring": "all"
