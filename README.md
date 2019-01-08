@@ -32,3 +32,7 @@ In your `package.json`
   "globals": []
 }
 ```
+
+## Todo
+- [ ] how to integrate with editor plugins?
+- [ ] how to integrate with `snazzy`?
