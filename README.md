@@ -1,4 +1,7 @@
 # bro
+
+[![Greenkeeper badge](https://badges.greenkeeper.io/CodementorIO/bro.svg)](https://greenkeeper.io/)
+
 A bro will lint and prettify your code
 
 ## What's inside
