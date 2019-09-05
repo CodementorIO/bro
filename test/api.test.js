@@ -13,9 +13,6 @@ test('api: lintFiles', (t) => {
 test('api: allow "camelcase" on react unsafe lifecycle methods', (t) => {
   t.plan(3)
   standard.lintFiles(['mockReactComponentFile.js'], { cwd: 'test' }, (err, result) => {
-    result.results.forEach(res => {
-      console.log(res)
-    })
     t.error(err, 'no error while linting')
     t.equal(typeof result, 'object', 'result is an object')
     t.equal(result.errorCount, 0, 'has no error')
