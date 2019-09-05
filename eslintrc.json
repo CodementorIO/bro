@@ -17,6 +17,13 @@
     "jest": true
   },
   "rules": {
+    "camelcase": ["error", {
+      "allow": [
+        "UNSAFE_componentWillMount",
+        "UNSAFE_componentWillReceiveProps",
+        "UNSAFE_componentWillUpdate"
+      ]
+    }],
     "prefer-const": ["error", {
       "destructuring": "all"
     }],
