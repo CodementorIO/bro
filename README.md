@@ -12,7 +12,7 @@ A bro will lint and prettify your code
 ## Installation
 
 ```
-$ yarn install @codementor/bro --dev
+$ yarn add @codementor/bro --dev
 ```
 
 To let your editor lint plugin works, you'll need to copy the `.eslintrc` from this package to your project root.
