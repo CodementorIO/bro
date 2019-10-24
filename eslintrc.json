@@ -27,6 +27,7 @@
     "comma-dangle": "off",
     "eol-last": "off",
     "lines-between-class-members": "off",
+    "no-case-declarations": "warn",
     "no-prototype-builtins": "off",
     "prefer-const": ["error", {
       "destructuring": "all"
@@ -41,6 +42,7 @@
         "singleQuote": true
       }
     ],
+    "react/jsx-curly-brace-presence": "warn",
     "react/jsx-fragments": "off",
     "react/jsx-handler-names": "off",
     "react/require-default-props": ["error"],
