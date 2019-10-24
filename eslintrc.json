@@ -39,6 +39,7 @@
         "jsxSingleQuote": true,
         "singleQuote": true
       }
-    ]
+    ],
+    "react/require-default-props": ["error"]
   }
 }

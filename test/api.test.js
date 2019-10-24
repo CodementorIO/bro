@@ -19,6 +19,17 @@ test('api: allow "camelcase" on react unsafe lifecycle methods', (t) => {
   })
 })
 
+test('api: do not allow not assigning default value for not required props', (t) => {
+  t.plan(4)
+  standard.lintFiles(['mockReactComponentFileWithoutDefaultProps.js'], { cwd: 'test' }, (err, result) => {
+    t.error(err, 'no error while linting')
+    t.equal(typeof result, 'object', 'result is an object')
+    t.equal(result.errorCount, 1, 'has error')
+    const [{ messages }] = result.results
+    t.equal(messages[0].ruleId, 'react/require-default-props', 'has no corresponding defaultProps declaration')
+  })
+})
+
 test('api: lintText', (t) => {
   t.plan(3)
   standard.lintText('console.log("hi there")', (err, result) => {
