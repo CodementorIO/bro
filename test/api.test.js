@@ -3,7 +3,7 @@ const test = require('tape')
 
 test('api: lintFiles', (t) => {
   t.plan(3)
-  standard.lintFiles(['mockFile.js'], { cwd: 'test' }, (err, result) => {
+  standard.lintFiles(['test/mockFile.js'], (err, result) => {
     t.error(err, 'no error while linting')
     t.equal(typeof result, 'object', 'result is an object')
     t.equal(result.errorCount, 1, 'no semicolons')
@@ -12,7 +12,7 @@ test('api: lintFiles', (t) => {
 
 test('api: allow "camelcase" on react unsafe lifecycle methods', (t) => {
   t.plan(3)
-  standard.lintFiles(['mockReactComponentFile.js'], { cwd: 'test' }, (err, result) => {
+  standard.lintFiles(['test/mockReactComponentFile.js'], (err, result) => {
     t.error(err, 'no error while linting')
     t.equal(typeof result, 'object', 'result is an object')
     t.equal(result.errorCount, 0, 'has no error')
@@ -21,7 +21,7 @@ test('api: allow "camelcase" on react unsafe lifecycle methods', (t) => {
 
 test('api: do not allow not assigning default value for not required props', (t) => {
   t.plan(4)
-  standard.lintFiles(['mockReactComponentFileWithoutDefaultProps.js'], { cwd: 'test' }, (err, result) => {
+  standard.lintFiles(['test/mockReactComponentFileWithoutDefaultProps.js'], (err, result) => {
     t.error(err, 'no error while linting')
     t.equal(typeof result, 'object', 'result is an object')
     t.equal(result.errorCount, 1, 'has error')
