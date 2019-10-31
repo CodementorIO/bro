@@ -24,12 +24,14 @@
         "UNSAFE_componentWillUpdate"
       ]
     }],
+    "comma-dangle": "off",
+    "eol-last": "off",
+    "lines-between-class-members": "off",
+    "no-case-declarations": "off",
+    "no-prototype-builtins": "off",
     "prefer-const": ["error", {
       "destructuring": "all"
     }],
-    "quote-props": ["error", "as-needed"],
-    "eol-last": "off",
-    "comma-dangle": "off",
     "prettier/prettier": [
       "error", {
         "semi": false,
@@ -39,6 +41,13 @@
         "jsxSingleQuote": true,
         "singleQuote": true
       }
-    ]
+    ],
+    "react/jsx-curly-brace-presence": "off",
+    "react/jsx-fragments": "off",
+    "react/jsx-handler-names": "off",
+    "react/jsx-no-target-blank": "off",
+    "react/jsx-pascal-case": "off",
+    "react/require-default-props": "error",
+    "quote-props": ["error", "as-needed"]
   }
 }
