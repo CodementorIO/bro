@@ -19,6 +19,16 @@ test('api: allow "camelcase" on react unsafe lifecycle methods', (t) => {
   })
 })
 
+test('api: do not wrong import order', (t) => {
+  t.plan(3)
+  standard.lintFiles(['test/mockFileWithWrongImportOrder.js'], (err, result) => {
+    t.error(err, 'no error while linting')
+    t.equal(result.errorCount, 1, 'has error')
+    const [{ messages }] = result.results
+    t.equal(messages[0].ruleId, 'import/order', 'has import order error')
+  })
+})
+
 test('api: do not allow not assigning default value for not required props', (t) => {
   t.plan(4)
   standard.lintFiles(['test/mockReactComponentFileWithoutDefaultProps.js'], (err, result) => {
