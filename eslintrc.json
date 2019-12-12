@@ -27,7 +27,7 @@
     "comma-dangle": "off",
     "eol-last": "off",
     "lines-between-class-members": "off",
-    "no-case-declarations": "off",
+    "no-case-declarations": "error",
     "no-prototype-builtins": "off",
     "prefer-const": ["error", {
       "destructuring": "all"
