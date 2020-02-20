@@ -24,7 +24,7 @@
         "UNSAFE_componentWillUpdate"
       ]
     }],
-    "comma-dangle": "off",
+    "comma-dangle": ["error", "always-multiline"],
     "eol-last": "off",
     "lines-between-class-members": "off",
     "no-case-declarations": "error",
@@ -39,7 +39,8 @@
         "arrowParens": "always",
         "jsxBracketSameLine": true,
         "jsxSingleQuote": true,
-        "singleQuote": true
+        "singleQuote": true,
+        "trailingComma": "es5"
       }
     ],
     "react/jsx-curly-brace-presence": "off",
