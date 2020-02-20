@@ -24,7 +24,13 @@
         "UNSAFE_componentWillUpdate"
       ]
     }],
-    "comma-dangle": ["error", "always-multiline"],
+    "comma-dangle": ["error", {
+      "arrays": "always-multiline",
+      "exports": "always-multiline",
+      "functions": "never",
+      "imports": "always-multiline",
+      "objects": "always-multiline"
+    }],
     "eol-last": "off",
     "lines-between-class-members": "off",
     "no-case-declarations": "error",
