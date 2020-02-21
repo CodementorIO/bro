@@ -1,6 +1,6 @@
 {
   "name": "@codementor/bro",
-  "version": "2.4.1-beta.8",
+  "version": "2.5.0",
   "description": "A bro will lint and prettify your code",
   "main": "index.js",
   "bin": {
