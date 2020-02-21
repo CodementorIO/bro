@@ -24,10 +24,16 @@
         "UNSAFE_componentWillUpdate"
       ]
     }],
-    "comma-dangle": "off",
+    "comma-dangle": ["error", {
+      "arrays": "always-multiline",
+      "exports": "always-multiline",
+      "functions": "never",
+      "imports": "always-multiline",
+      "objects": "always-multiline"
+    }],
     "eol-last": "off",
     "lines-between-class-members": "off",
-    "no-case-declarations": "off",
+    "no-case-declarations": "error",
     "no-prototype-builtins": "off",
     "prefer-const": ["error", {
       "destructuring": "all"
@@ -39,7 +45,8 @@
         "arrowParens": "always",
         "jsxBracketSameLine": true,
         "jsxSingleQuote": true,
-        "singleQuote": true
+        "singleQuote": true,
+        "trailingComma": "es5"
       }
     ],
     "react/jsx-curly-brace-presence": "off",

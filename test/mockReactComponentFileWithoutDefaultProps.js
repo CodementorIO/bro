@@ -10,7 +10,7 @@ const MyComponent = ({ variant, large }) => (
 
 MyComponent.propTypes = {
   variant: PropTypes.string.isRequired,
-  large: PropTypes.bool
+  large: PropTypes.bool,
 }
 
 export default MyComponent

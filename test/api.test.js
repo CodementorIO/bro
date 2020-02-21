@@ -10,6 +10,31 @@ test('api: lintFiles', (t) => {
   })
 })
 
+test('api: do not allow case declarations', (t) => {
+  t.plan(4)
+  standard.lintFiles(['test/mockCaseDeclarationFile.js'], (err, result) => {
+    t.error(err, 'no error while linting')
+    t.equal(typeof result, 'object', 'result is an object')
+    t.equal(result.errorCount, 1, 'has error')
+    const [{ messages }] = result.results
+    t.equal(messages[0].ruleId, 'no-case-declarations', 'case declarations is not allowed')
+  })
+})
+
+test('api: comma dangle', (t) => {
+  t.plan(7)
+  standard.lintFiles(['test/mockCommaDangleFile.js'], (err, result) => {
+    t.error(err, 'no error while linting')
+    t.equal(typeof result, 'object', 'result is an object')
+    t.equal(result.errorCount, 4, 'has error')
+    const [{ messages }] = result.results
+    t.equal(messages[0].ruleId, 'prettier/prettier', 'should insert ,')
+    t.equal(messages[1].ruleId, 'comma-dangle', 'comma dangle on multiline')
+    t.equal(messages[2].ruleId, 'prettier/prettier', 'should insert ,')
+    t.equal(messages[3].ruleId, 'comma-dangle', 'comma dangle on multiline')
+  })
+})
+
 test('api: allow "camelcase" on react unsafe lifecycle methods', (t) => {
   t.plan(3)
   standard.lintFiles(['test/mockReactComponentFile.js'], (err, result) => {
