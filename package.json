@@ -42,6 +42,6 @@
     "standard-engine": "^12.0.0"
   },
   "devDependencies": {
-    "tape": "^4.9.1"
+    "tape": "^5.0.1"
   }
 }
