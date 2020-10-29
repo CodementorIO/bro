@@ -44,6 +44,17 @@ test('api: allow "camelcase" on react unsafe lifecycle methods', (t) => {
   })
 })
 
+test('api: object-shorthand always', (t) => {
+  t.plan(4)
+  standard.lintFiles(['test/mockObjectShorthandFile.js'], (err, result) => {
+    t.error(err, 'no error while linting')
+    t.equal(typeof result, 'object', 'result is an object')
+    t.equal(result.errorCount, 1, 'has no error')
+    const [{ messages }] = result.results
+    t.equal(messages[0].ruleId, 'object-shorthand', 'complains when not using object shorthand')
+  })
+})
+
 test('api: do not allow not assigning default value for not required props', (t) => {
   t.plan(4)
   standard.lintFiles(['test/mockReactComponentFileWithoutDefaultProps.js'], (err, result) => {
