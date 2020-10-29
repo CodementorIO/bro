@@ -1,6 +1,6 @@
 {
   "name": "@codementor/bro",
-  "version": "2.5.0-beta.6",
+  "version": "2.5.0-beta.7",
   "description": "A bro will lint and prettify your code",
   "main": "index.js",
   "bin": {
@@ -8,12 +8,12 @@
   },
   "scripts": {
     "test": "tape test/*.test.js",
-    "publish:beta": "npm publish --tag beta",
-    "publish": "npm publish",
-    "release:beta": "release pre beta && yarn publish:beta",
-    "release:patch": "release patch && yarn publish",
-    "release:minor": "release minor && yarn publish",
-    "release:major": "release major && yarn publish"
+    "npm-publish:beta": "npm publish --tag beta",
+    "npm-publish": "npm publish",
+    "release:beta": "release pre beta && yarn npm-publish:beta",
+    "release:patch": "release patch && yarn npm-publish",
+    "release:minor": "release minor && yarn npm-publish",
+    "release:major": "release major && yarn npm-publish"
   },
   "keywords": [
     "JavaScript Standard Style",
