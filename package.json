@@ -7,7 +7,13 @@
     "bro": "./bin/cli.js"
   },
   "scripts": {
-    "test": "tape test/*.test.js"
+    "test": "tape test/*.test.js",
+    "publish:beta": "yarn publish --tag beta",
+    "publish": "npm publish",
+    "release:beta": "release pre beta && yarn publish:beta",
+    "release:patch": "release patch && yarn publish",
+    "release:minor": "release minor && yarn publish",
+    "release:major": "release major && yarn publish"
   },
   "keywords": [
     "JavaScript Standard Style",
@@ -42,6 +48,7 @@
     "standard-engine": "^12.0.0"
   },
   "devDependencies": {
+    "release": "^6.3.0",
     "tape": "^4.9.1"
   }
 }
