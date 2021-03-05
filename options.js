@@ -8,6 +8,6 @@ module.exports = {
   homepage: pkg.homepage,
 	eslint: eslint,
 	eslintConfig: {
-		configFile: path.join(__dirname, 'eslintrc.json')
+		configFile: path.join(path.resolve('./'), '.eslintrc.json')
 	}
 }
