@@ -17,7 +17,7 @@ $ yarn add @codementor/bro --dev
 
 To let your editor lint plugin works, you'll need to copy the `eslintrc.json` from this package to your project root and rename to `.eslintrc.json`.
 ```
-$ cp node_modules/@codementor/bro/eslintrc.json ./.eslintrc
+$ cp node_modules/@codementor/bro/eslintrc.json ./.eslintrc.json
 ```
 
 ## Config
