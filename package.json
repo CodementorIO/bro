@@ -1,6 +1,6 @@
 {
   "name": "@codementor/bro",
-  "version": "2.5.2",
+  "version": "2.6.0-beta.0",
   "description": "A bro will lint and prettify your code",
   "main": "index.js",
   "bin": {
@@ -44,8 +44,14 @@
     "eslint-plugin-promise": "4.2.1",
     "eslint-plugin-react": "^7.18.3",
     "eslint-plugin-standard": "^4.0.0",
+    "stylelint": "9.10.1",
+    "stylelint-config-recommended": "2.1.0",
+    "stylelint-config-styled-components": "0.1.1",
+    "stylelint-processor-styled-components": "1.6.0",
     "prettier": "^1.17.1",
-    "standard-engine": "^12.0.0"
+    "staged-git-files": "^1.2.0",
+    "standard-engine": "^12.0.0",
+    "styled-components": "^5.2.1"
   },
   "devDependencies": {
     "release": "^6.3.0",
