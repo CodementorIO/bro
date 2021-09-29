@@ -4,7 +4,7 @@
   "description": "A bro will lint and prettify your code",
   "main": "index.js",
   "bin": {
-    "bro": "./bin/cli.js"
+    "bro": "./bin/cli.js && stylelint"
   },
   "scripts": {
     "test": "tape test/*.test.js",
@@ -49,6 +49,8 @@
   },
   "devDependencies": {
     "release": "^6.3.0",
+    "stylelint": "^13.13.1",
+    "stylelint-config-standard": "^22.0.0",
     "tape": "^4.9.1"
   }
 }
