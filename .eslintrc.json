@@ -4,12 +4,9 @@
     "standard",
     "standard-react",
     "standard-jsx",
-    "prettier",
-    "prettier/react",
-    "prettier/standard"
+    "prettier"
   ],
   "plugins": [
-    "standard",
     "react",
     "prettier"
   ],
@@ -44,7 +41,7 @@
         "semi": false,
         "printWidth": 90,
         "arrowParens": "always",
-        "jsxBracketSameLine": true,
+        "bracketSameLine": true,
         "jsxSingleQuote": true,
         "singleQuote": true,
         "trailingComma": "es5"
