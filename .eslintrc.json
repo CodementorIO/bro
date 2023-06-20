@@ -4,7 +4,8 @@
     "standard",
     "standard-react",
     "standard-jsx",
-    "prettier"
+    "prettier",
+    "plugin:react-hooks/recommended"
   ],
   "plugins": [
     "react",
